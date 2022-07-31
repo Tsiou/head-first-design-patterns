@@ -4,5 +4,8 @@
   "description": "",
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "4.7"
+  }
 }
