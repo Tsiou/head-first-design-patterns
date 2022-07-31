@@ -6,5 +6,6 @@ export default abstract class CondimentDecorator extends Beverage {
 	constructor(beverage: Beverage) {
 		super();
 		this.beverage = beverage;
+		this.size = beverage.size;
 	}
 }
