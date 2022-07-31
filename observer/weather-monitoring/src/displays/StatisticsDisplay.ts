@@ -16,6 +16,7 @@ export default class StatisticsDisplay
 		weatherData.registerObserver(this);
 		this.temperatures = [this.weatherData.temperature];
 		this.updateStatistics();
+		this.display();
 	}
 
 	public display(): void {
