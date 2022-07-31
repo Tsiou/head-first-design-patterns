@@ -22,7 +22,7 @@ export default class WeatherData implements WeatherDataSubject {
     };
 
     public notifyObservers () : void {
-        this.observers.forEach(o => o.update(this.temperature, this.humidity, this.pressure));
+        this.observers.forEach(o => o.update());
     };
 
 	/* This method gets called

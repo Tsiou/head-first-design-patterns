@@ -22,8 +22,9 @@ export default class StatisticsDisplay
 		console.log(`Weather Stats
                     Avg temp: ${this.averageTemp} degress, minimum temp: ${this.minimumTemp}, maximum temp: ${this.maximumTemp}.`);
 	}
-	public update(temperature: number, humidity: number, pressure: number): void {
-		this.temperatures.push(temperature);
+	public update(): void {
+		const newTemperature = this.weatherData.temperature;
+		this.temperatures.push(newTemperature);
 		this.updateStatistics();
 		this.display();
 	}

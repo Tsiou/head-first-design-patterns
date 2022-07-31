@@ -16,9 +16,9 @@ export default class CurrentConditionsDisplay
 		this.humidity = weatherData.humidity;
 	}
 
-	public update(temperature: number, humidity: number, pressure: number): void {
-		this.temperature = temperature;
-		this.humidity = humidity;
+	public update(): void {
+		this.temperature = this.weatherData.temperature;
+		this.humidity = this.weatherData.humidity;
 		this.display();
 	}
 
