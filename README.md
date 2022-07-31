@@ -1,5 +1,6 @@
-# head-first-design-patterns
-Implementation of the code contained inside the Head First Design Patterns book (2nd edition), along with the coding puzzles contained within
+# Head first design patterns
+An implementation of the code contained inside the Head First Design Patterns book (2nd edition), along with the coding puzzles contained within.
+The code is not written as is, in cases where it can be simplified by the language.
 
 ## Running the code
 ### :warning: Node(16+) and Typescript dependencies are necessary dependencies.
