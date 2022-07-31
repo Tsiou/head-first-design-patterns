@@ -1,5 +1,13 @@
-export default abstract class Beverage {
-    description = 'Unknown Beverage';
+export const enum SIZES {
+	TALL = "tall",
+	GRANDE = "grande",
+	VENTI = "venti",
+}
 
-    public abstract cost : number;
+export default abstract class Beverage {
+	size: SIZES = SIZES.TALL;
+
+	abstract get description() : string;
+
+	abstract get cost(): number;
 }

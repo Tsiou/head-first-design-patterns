@@ -1,10 +1,11 @@
 import Beverage from "./Beverage";
 
 export default class Espresso extends Beverage {
-    constructor() {
-        super();
-        this.description = 'Espresso';
-    }
+	get description(): string {
+		return "Espresso";
+	}
 
-    public cost = 1.99;
+	get cost(): number {
+		return 1.99;
+	}
 }

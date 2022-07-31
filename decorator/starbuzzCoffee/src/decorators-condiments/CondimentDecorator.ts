@@ -7,6 +7,4 @@ export default abstract class CondimentDecorator extends Beverage {
 		super();
 		this.beverage = beverage;
 	}
-
-	abstract description: string;
 }

@@ -1,12 +1,11 @@
-import Beverage from "../beverages/Beverage";
 import CondimentDecorator from "./CondimentDecorator";
 
 export default class Mocha extends CondimentDecorator {
-	description: string;
-	constructor(beverage: Beverage) {
-		super(beverage);
-		this.description = `${beverage.description} , Mocha`;
+	get description(): string {
+		return `${this.beverage.description} , Mocha`;
 	}
 
-	public cost = this.beverage.cost + 0.2;
+	get cost(): number {
+		return this.beverage.cost + 0.2;
+	}
 }

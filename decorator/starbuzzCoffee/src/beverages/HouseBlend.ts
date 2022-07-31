@@ -1,10 +1,11 @@
 import Beverage from "./Beverage";
 
 export default class HouseBlend extends Beverage {
-	constructor() {
-		super();
-		this.description = "House Blend Coffee";
+	get description(): string {
+		return "House Blend Coffee";
 	}
 
-	public cost = 0.89;
+	get cost() {
+		return 0.89;
+	}
 }
